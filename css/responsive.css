@@ -1,0 +1,66 @@
+/* X-Small devices (portrait phones, less than 576px) */
+/* No media query for `xs` since this is the default in Bootstrap */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .container {
+        padding: 0 4.8rem;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .navbar {
+        padding: 4.7rem 0;
+        box-shadow: none;
+        background-color: transparent;
+    }
+
+    .header.on-scroll .navbar {
+        padding: 2.4rem 0;
+        box-shadow: 0px 100px 80px 0px rgba(0, 0, 0, 2%), 0px 64.81481170654297px 46.85185241699219px 0px rgba(0, 0, 0, 2%), 0px 38.51852035522461px 25.481481552124023px 0px rgba(0, 0, 0, 1%), 0px 20px 13px 0px rgba(0, 0, 0, 1%), 0px 8.148148536682129px 6.518518447875977px 0px rgba(0, 0, 0, 1%), 0px 1.8518518209457397px 3.1481480598449707px 0px rgba(0, 0, 0, 0%);
+        background-color: #fff;
+    }
+
+    .burger,
+    .menu-header,
+    .header-backdrop {
+        display: none;
+    }
+
+    .brand img {
+        /* max-width: 115px; */
+        max-width: 11.5rem;
+    }
+
+    .menu {
+        position: relative;
+        transform: unset;
+        overflow: unset;
+        top: unset;
+        left: unset;
+        margin-left: auto;
+        width: auto;
+    }
+
+    .menu-inner {
+        flex-direction: row;
+        column-gap: 5rem;
+        padding: 0;
+    }
+
+    .menu-block {
+        margin-left: 8.6rem;
+        column-gap: 5rem;
+    }
+
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {}
