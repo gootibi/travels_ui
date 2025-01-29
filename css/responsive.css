@@ -44,6 +44,7 @@
         left: unset;
         margin-left: auto;
         width: auto;
+        background-color: transparent;
     }
 
     .menu-inner {

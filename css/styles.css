@@ -242,3 +242,131 @@ h6 {
     order: 0;
     margin: 0;
 }
+
+/** Hero Section **/
+
+.hero-section {
+    background-image: url(../images/hero-left-elipse.png), url(../images/hero-right-decore.png);
+    background-position: 0% 100%, 100% 0%;
+    background-size: auto, auto;
+    background-repeat: no-repeat, no-repeat;
+    padding-top: 15rem;
+    padding-bottom: 5rem;
+}
+
+.hero-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 2.4rem;
+}
+
+/* Hero Image */
+
+.hero-image {
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-plane-left,
+.hero-plane-right {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    animation: fly 5s linear infinite;
+}
+
+.hero-plane-right {
+    animation-delay: 1s;
+}
+
+.hero-main-image {
+    position: relative;
+    z-index: 1;
+}
+
+@keyframes fly {
+    0% {
+        left: -10%;
+        transform: scale(1.1);
+    }
+
+    50% {
+        left: 0%;
+        transform: scale(1);
+    }
+
+    100% {
+        left: -10%;
+        transform: scale(1.1);
+    }
+}
+
+/* Hero Content */
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 3.4rem;
+}
+
+.hero-sub-heading {
+    color: #DF6951;
+    font-weight: bold;
+    font-size: 1.8rem;
+    text-transform: capitalize;
+}
+
+.hero-main-heading {
+    color: #181E4B;
+    font-size: 3.5rem;
+    line-height: 3.8rem;
+}
+
+.hero-copy-text {
+    max-width: 47.7rem;
+}
+
+.hero-copy-text p {
+    line-height: 3rem;
+}
+
+.hero-action {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2rem;
+}
+
+.hero-find-btn {
+    padding: 1.8rem 2.6rem;
+    background-color: #F1A501;
+    border-radius: 1rem;
+    color: #fff;
+    box-shadow: 0px 20px 35px 0px rgba(241, 165, 1, 15%);
+    font-family: "Open Sans", serif;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.hero-play-btn {
+    color: #686D77;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.hero-play-btn span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    background-color: #DF6951;
+    color: #fff;
+    margin-right: 0.8rem;
+    box-shadow: 0px 15px 30px 0px rgba(223, 105, 81, 30%);
+}
