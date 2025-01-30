@@ -9,10 +9,35 @@
     .container {
         padding: 0 4.8rem;
     }
+
+    .category-row {
+        margin-left: -3rem;
+        margin-right: -3rem;
+        flex-direction: row;
+        row-gap: 8rem;
+    }
+
+    .category-column {
+        width: calc(50% - 5rem);
+        margin: 0 auto;
+    }
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+
+    /* Section default settings */
+
+    .section-sub-heading {
+        font-size: 1.8rem;
+    }
+
+    .section-main-heading {
+        font-size: 5rem;
+    }
+
+    /* Navbar */
+
     .navbar {
         padding: 4.7rem 0;
         box-shadow: none;
@@ -58,6 +83,8 @@
         column-gap: 5rem;
     }
 
+    /* Hero Section */
+
     .hero-section {
         padding-bottom: 9.7rem;
     }
@@ -101,10 +128,37 @@
         height: 5.2rem;
         width: 5.2rem;
     }
+
+    /* Category Section */
+
+    .category-section-wrapper {
+        padding-top: 6.6rem;
+    }
+
+    .category-card {
+        box-shadow: none;
+    }
+
+    .category-rectangle {
+        opacity: 0;
+        transform: translate(-20%, 40%);
+    }
+
+    .category-card:hover {
+        box-shadow: 0px 100px 80px 0px rgba(0, 0, 0, 2%), 0px 64.81481170654297px 46.85185241699219px 0px rgba(0, 0, 0, 2%), 0px 38.51852035522461px 25.481481552124023px 0px rgba(0, 0, 0, 1%), 0px 20px 13px 0px rgba(0, 0, 0, 1%), 0px 8.148148536682129px 6.518518447875977px 0px rgba(0, 0, 0, 1%), 0px 1.8518518209457397px 3.1481480598449707px 0px rgba(0, 0, 0, 0%);
+    }
+
+    .category-card:hover+.category-rectangle {
+        opacity: 1;
+        transform: translate(-15%, 30%);
+    }
 }
 
 /* X-Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
+
+    /* Hero Section */
+
     .hero-main-heading {
         font-size: 8.4rem;
         line-height: 8.9rem;
@@ -113,6 +167,18 @@
     .hero-sub-heading {
         font-size: 2rem;
     }
+
+    /* Category Section */
+
+    .category-row {
+        gap: 0rem;
+    }
+
+    .category-column {
+        width: 25%;
+        padding: 0 1.5rem;
+    }
+
 }
 
 /* XX-Large devices (larger desktops, 1400px and up) */

@@ -429,7 +429,10 @@ h6 {
     padding: 4rem 2rem;
     border-radius: 3.6rem;
     background-color: #fff;
+    transition: 0.5s all ease;
     box-shadow: 0px 100px 80px 0px rgba(0, 0, 0, 2%), 0px 64.81481170654297px 46.85185241699219px 0px rgba(0, 0, 0, 2%), 0px 38.51852035522461px 25.481481552124023px 0px rgba(0, 0, 0, 1%), 0px 20px 13px 0px rgba(0, 0, 0, 1%), 0px 8.148148536682129px 6.518518447875977px 0px rgba(0, 0, 0, 1%), 0px 1.8518518209457397px 3.1481480598449707px 0px rgba(0, 0, 0, 0%);
+    /* cursor: pointer;
+    user-select: none; */
 }
 
 .category-title {
@@ -442,6 +445,8 @@ h6 {
 
 .category-copy {
     line-height: 2.6rem;
+    max-width: 18.1rem;
+    margin: auto;
 }
 
 .category-rectangle {
@@ -452,4 +457,5 @@ h6 {
     bottom: -0;
     transform: translate(-15%, 30%);
     z-index: -1;
+    transition: 0.5s all ease;
 }
