@@ -459,3 +459,70 @@ h6 {
     z-index: -1;
     transition: 0.5s all ease;
 }
+
+/** Selling Section **/
+
+.selling-section {
+    padding: 5rem 0;
+}
+
+.selling-section-wrapper {
+    padding-top: 3rem;
+}
+
+.selling-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3.5rem;
+}
+
+.selling-column {
+    width: 100%;
+}
+
+.selling-card {
+    border-radius: 2.4rem;
+    overflow: hidden;
+    background-color: #fff;
+    transition: 0.5s all ease;
+    box-shadow: 0px 100px 80px 0px rgba(0, 0, 0, 2%), 0px 64.81481170654297px 46.85185241699219px 0px rgba(0, 0, 0, 2%), 0px 38.51852035522461px 25.481481552124023px 0px rgba(0, 0, 0, 1%), 0px 20px 13px 0px rgba(0, 0, 0, 1%), 0px 8.148148536682129px 6.518518447875977px 0px rgba(0, 0, 0, 1%), 0px 1.8518518209457397px 3.1481480598449707px 0px rgba(0, 0, 0, 0%);
+}
+
+.selling-card:hover {
+    transform: translateY(-2%);
+}
+
+.selling-card-image {
+    height: 32.7rem;
+}
+
+.selling-card-image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.selling-detail {
+    padding: 2.7rem 2rem 4rem;
+}
+
+.selling-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.9rem;
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.selling-duration {
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 1.4rem;
+}
+
+.selling-duration .bx {
+    font-size: 1.6rem;
+    color: #080809;
+}
